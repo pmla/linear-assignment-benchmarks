@@ -17,7 +17,7 @@ def random_logarithmic(n, shape):
 def random_integer(n, shape):
     np.random.seed(0)
     for i in range(n):
-        yield np.random.randint(-20, 20, shape)
+        yield np.random.randint(-1000, 1000, shape)
 
 
 def random_spatial(n, shape):

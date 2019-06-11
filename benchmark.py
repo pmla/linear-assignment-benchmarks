@@ -29,17 +29,17 @@ def pretty_format(t, e):
     if t == float("inf"):
         return missing, missing
     elif e == 0:
-        return "%.3e" % t, "zero".rjust(9)
+        return ("%.2f" % (1000 * t)).rjust(9), "zero".rjust(9)
     else:
-        return "%.3e" % t, "%.3e" % e
+        return ("%.2f" % (1000 * t)).rjust(9), "%.3e" % e
 
 
 def run():
     num_it = 10
-    shapes = [(20, 20), (20, 40)]
+    shapes = [(400, 400), (400, 800)]
     for shape in shapes:
 
-        heading = "mean time (s)    error sum    status"
+        heading = "time (ms)        error sum    status"
         if shape[0] == shape[1]:
             print(("square tests: " + str(shape)).ljust(30) + heading)
         else:
