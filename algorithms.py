@@ -1,7 +1,7 @@
 import time
 import numpy as np
 import scipy_python
-import _hungarian
+import _lap
 import lapsolver
 import lap
 import lapjv
@@ -54,7 +54,7 @@ class alg_scipy(Algorithm):
     pass
 
 
-@algorithm(_hungarian.linear_sum_assignment, True)
+@algorithm(_lap.linear_sum_assignment, True)
 class alg_jonkervolgenant(Algorithm):
     pass
 

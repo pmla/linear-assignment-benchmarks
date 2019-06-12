@@ -20,6 +20,12 @@ def random_integer(n, shape):
         yield np.random.randint(-1000, 1000, shape)
 
 
+def random_binary(n, shape):
+    np.random.seed(0)
+    for i in range(n):
+        yield np.random.randint(0, 2, shape)
+
+
 def random_spatial(n, shape):
     np.random.seed(0)
     for i in range(n):
@@ -30,4 +36,4 @@ def random_spatial(n, shape):
         yield cost_matrix
 
 generators = [random_uniform, random_spatial, random_logarithmic,
-              random_integer]
+              random_integer, random_binary]

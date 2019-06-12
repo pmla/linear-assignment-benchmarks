@@ -28,7 +28,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "jonker_volgenant.h"
+#include "jonkervolgenant.h"
 #include <Python.h>
 #include <arrayobject.h>
 #include <ndarraytypes.h>

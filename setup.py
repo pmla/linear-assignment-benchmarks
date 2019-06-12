@@ -18,8 +18,8 @@ module1 = Extension('jonkervolgenant',
                     library_dirs = [],
                     extra_compile_args = ["-std=c++11"],
                     extra_link_args = ["-lm", "-lpython%s" % (python_version)],
-                    sources = ['jonker_volgenant_module.c',
-                               'jonker_volgenant.cpp',
+                    sources = ['jonkervolgenant_module.c',
+                               'jonkervolgenant.cpp',
 ])
 
 setup(name = 'rectangular',
@@ -27,7 +27,7 @@ setup(name = 'rectangular',
        description = 'Jonker-Volgenant module',
        author = 'P. M. Larsen',
        author_email = 'pmla@mit.edu',
-       url = 'https://github.com/pmla/hungarian-algorithm-cpp',
+       url = 'https://github.com/pmla/linear-assignment-benchmarks',
        long_description = '''
 Development module for rectangular assignment problem''',
        ext_modules = [module1])
